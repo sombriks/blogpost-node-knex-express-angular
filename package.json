@@ -1,0 +1,18 @@
+{
+  "name": "mymural",
+  "version": "0.0.0",
+  "description": "sample app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sombriks@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.13.3",
+    "pg": "~4.4.1",
+    "knex": "~0.8.6",
+    "body-parser": "~1.13.3"
+  }
+}

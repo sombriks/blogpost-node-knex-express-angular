@@ -1,0 +1,23 @@
+<html data-ng-app="mymural">
+  <head>
+    <title>Mural app</title>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="mymural.js"></script>
+  </head>
+  <body data-ng-controller="MyMural">
+    <h1>Mural</h1>
+    <fieldset>
+      <legend>Nova Mensagem</legend>
+      <input type="text" placeholder="Título da mensagem" data-ng-model="novamsg.titulomensagem"/><br/>
+      <textarea data-ng-model="novamsg.corpomensagem"></textarea><br/>
+      <button data-ng-click="enviamsg()">Enviar</button>
+    </fieldset>
+    <fieldset>
+        <legend>Mensagens</legend>
+        <div data-ng-repeat="msg in mensagens">
+          <h2>{{msg.titulomensagem}}</h2>
+          <p>{{msg.corpomensagem}}</p>
+        </div>
+    </fieldset>
+  </body>
+</html>
